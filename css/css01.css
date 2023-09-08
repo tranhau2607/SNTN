@@ -1,0 +1,247 @@
+audio{
+  width: 7%;
+  height: 30px;
+}
+* { 
+  margin: 0;
+  padding: 0;
+}
+img { vertical-align:middle; }
+.bg-snow-tranparent-hidden:hover {opacity: 1.0;  filter: alpha(opacity=100); }
+.card {
+  border-radius: 20px;
+  margin-left: 10px;
+  height: 500px;
+  background-color: #aea4a4;
+  flex: 1;
+  transition: .3s all ease;
+}
+
+.card:hover {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(216, 43, 43);
+}
+.card:hover {
+  flex: 2;
+  background-color: rgb(173, 144, 144);
+}
+
+body {
+  background-image: url(n4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+.box-hover {
+  margin-top: 30px;
+display: flex;
+}
+.box-hover img {
+  max-width: 100%;
+}
+
+
+body {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka One", cursive;
+  color: white;
+}
+
+@keyframes animate {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  animation: fadeout 11s linear forwards;
+}
+
+@keyframes fadeout {
+
+  0%,
+  91% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading h2 {
+  color: #000;
+}
+
+.loading .bar {
+  position: relative;
+  width: 400px;
+  height: 40px;
+  background: transparent;
+  margin: 0 20px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+
+.loading .bar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  transform-origin: left;
+  animation: animate 10s linear forwards;
+}
+
+.loading .bar:after {
+  content: 'Loading...';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  font-size: 20px;
+  mix-blend-mode: difference;
+}
+
+.container {
+  margin: 5rem 38rem;
+
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.text h1 {
+  font-size: 6rem;
+}
+
+@keyframes kf3 {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: 50%;
+  }
+
+  100% {
+    left: 100%;  
+  }
+}
+
+.ele2 {
+  color: rgb(172, 170, 170);
+  margin-top: 47rem;
+  position: absolute;
+  font-size: 7rem;
+}
+.ele2 h1{
+  font-family: "Fredoka One", cursive;
+}
+.exam4 {
+  animation: kf3 5s linear infinite alternate;
+}
+
+
+.containeri {
+  position: relative;
+  text-align: center;
+}
+
+.top-right {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #728e98;
+  font-size: 90%;
+}
+
+.top-left {
+  position: absolute;
+  top: 132px;
+  right: 29px;
+  color: #6c7c6b;
+  font-size: 80%;
+}
+
+.center {
+  position: absolute;
+  bottom: 115px;
+  left: 250px;
+  color: #6c7c6b;
+  font-size: 80%;
+}
+
+.and {
+  position: absolute;
+  bottom: 160px;
+  left: 240px;
+  color: #6c7c6b;
+  font-size: 80%;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 253px;
+  right: 20px;
+  color: #6c7c6b;
+  font-size: 80%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 5px;
+  left: 270px;
+  color: #b78690;
+}
